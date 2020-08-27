@@ -118,9 +118,9 @@ export default class SortingVisualizer extends React.Component {
 
         <button className="btn btn-secondary mx-2" onClick={() => this.resetArray()}>Generate New Array</button>
         <button className="btn btn-secondary" onClick={() => this.mergeSort()}>Merge Sort</button>
-        {/* <button onClick={() => this.quickSort()}>Quick Sort</button>
-        <button onClick={() => this.heapSort()}>Heap Sort</button>
-      <button onClick={() => this.bubbleSort()}>Bubble Sort</button> */}
+        <button className="btn btn-secondary mx-2" onClick={() => this.quickSort()}>Quick Sort</button>
+        <button className="btn btn-secondary" onClick={() => this.heapSort()}>Heap Sort</button>
+      <button className="btn btn-secondary mx-2" onClick={() => this.bubbleSort()}>Bubble Sort</button>
         {/* <button onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button> */}
