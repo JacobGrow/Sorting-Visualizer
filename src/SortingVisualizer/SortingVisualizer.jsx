@@ -9,7 +9,7 @@ const ANIMATION_SPEED_MS = 1;
 const NUMBER_OF_ARRAY_BARS = 370;
 
 // This is the main color of the array bars.
-const PRIMARY_COLOR = 'blue';
+const PRIMARY_COLOR = 'black';
 
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
@@ -93,7 +93,9 @@ export default class SortingVisualizer extends React.Component {
     return (
       <div className="container-fluid">
         <div className="row bg-dark header">
-
+<div className="col">
+  <h1 className="text-light my-3">Sorting Visualizer</h1>
+</div>
         </div>
         <div className="row mt-5">
 <div className="col-12">
