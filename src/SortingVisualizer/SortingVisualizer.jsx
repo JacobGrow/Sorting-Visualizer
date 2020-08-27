@@ -23,7 +23,7 @@ export default class SortingVisualizer extends React.Component {
     }
 
     mergeSort() {
-      const javaScriptSortedArray = this.state.array.slice().sort();
+      const javaScriptSortedArray = this.state.array.slice().sort((a, b) => a - b);
       const sortedArray = sortingAlgorithms.mergeSort(this.state.array)
 
       console.log(arraysAreEqual(javaScriptSortedArray, sortedArray))
@@ -52,7 +52,7 @@ function randomIntFromInterval(min, max) {
 }
 
 function arraysAreEqual(arrayOne, arrayTwo){
-  if (arrayOne.length !== arrayTwo) return false;
+  if (arrayOne.length !== arrayTwo.length) return false;
   for (let i = 0; i < arrayOne.length; i++) {
     if (arrayOne[i] !== arrayTwo[i]) return false;
   }
